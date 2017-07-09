@@ -5,8 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MyHomeFragment.OnImageClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,5 +65,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onButtonPress(String str1) {
+//        Button btn = (Button) findViewById(R.id.button2);
+//        final String str2 = str1;
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getApplicationContext(), str2 + " is Pressed!", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+        Toast.makeText(this, str1, Toast.LENGTH_SHORT).show();
+
     }
 }
