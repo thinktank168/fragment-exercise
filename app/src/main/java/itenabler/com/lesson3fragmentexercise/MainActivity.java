@@ -40,16 +40,16 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_hp) {
-//            frag = new MyHomeFragment();
+            frag = new MyHomeFragment();
         } else if (id == R.id.action_news) {
 //            frag = new MyNewsFragment();
         } else if (id == R.id.action_fb) {
 //            frag = new MyFBFragment();
         }
 
-//        getFragmentManager().beginTransaction()
-//                .replace(R.id.myContainer, frag)
-//                .commit();
+        getFragmentManager().beginTransaction()
+                .replace(R.id.myContainer, frag)
+                .commit();
 
 
         return super.onOptionsItemSelected(item);

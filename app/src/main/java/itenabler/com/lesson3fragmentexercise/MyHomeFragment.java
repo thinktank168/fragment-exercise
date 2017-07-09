@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 /**
  * Created by kentan on 9/7/2017.
  */
-public class HomeFragment  extends Fragment {
+public class MyHomeFragment extends Fragment {
 
     @Nullable
     @Override
