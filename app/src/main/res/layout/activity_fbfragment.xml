@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="My Home Page"
+        android:text="My Facebook Page"
         android:id="@+id/text_view_fb"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="67dp"
@@ -18,18 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
-        android:src="@drawable/home"
+        android:src="@drawable/facebook"
         android:layout_marginTop="128dp"
         android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/text_view_fb"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="106dp" />
 
 
 </RelativeLayout>

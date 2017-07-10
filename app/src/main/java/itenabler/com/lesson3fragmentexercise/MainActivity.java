@@ -9,6 +9,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements MyHomeFragment.OnButtonClickListener {
 
+    public static final String FB_BUNDLE = "FB_BUNDLE";
+    String frag_string = null;
+    Bundle frag_bundle = new Bundle();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +60,9 @@ public class MainActivity extends AppCompatActivity implements MyHomeFragment.On
         } else if (id == R.id.action_news) {
 //            frag = new MyNewsFragment();
         } else if (id == R.id.action_fb) {
-//            frag = new MyFBFragment();
+            frag = new MyFBFragment();
+            frag_bundle.putString(FB_BUNDLE, frag_string);
+            frag.setArguments(frag_bundle);
         }
 
         getFragmentManager().beginTransaction()
@@ -70,6 +76,6 @@ public class MainActivity extends AppCompatActivity implements MyHomeFragment.On
     @Override
     public void buttonpressed(String string) {
         Toast.makeText(this, "Activity received :" + string, Toast.LENGTH_SHORT).show();
-
+        frag_string = string; 
     }
 }
