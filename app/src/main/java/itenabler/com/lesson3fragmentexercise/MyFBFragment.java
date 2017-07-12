@@ -23,6 +23,9 @@ public class MyFBFragment extends Fragment {
         if (b != null && b.containsKey(MainActivity.FB_BUNDLE)) {
             myfb_frag_string = b.getString(MainActivity.FB_BUNDLE);
         }
+
+
+
     }
 
     @Nullable
